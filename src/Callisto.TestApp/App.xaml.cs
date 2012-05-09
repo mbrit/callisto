@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Callisto.Data;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -65,6 +66,7 @@ namespace XamlControlsUITestApp
         void OnSuspending(object sender, SuspendingEventArgs e)
         {
             //TODO: Save application state and stop any background activity
+            SQLiteConnectionPool.AppSuspending();
         }
     }
 }

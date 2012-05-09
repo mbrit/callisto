@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Callisto.TestApp.SamplePages.SqliteSample"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Callisto.TestApp.SamplePages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical">
+
+        <Button Content="Test CreateTableAsync" Click="HandleCreateTableAsync"></Button>
+        <Button Content="Test TableAsync" Click="HandleTableAsync"></Button>
+        <Button Content="Test InsertAsync" Click="HandleInsertAsync"></Button>
+        <Button Content="Test QueryAsync" Click="HandleQueryAsync"></Button>
+
+        <Button Content="Test Multiple 1" Click="HandleMultiple1"></Button>
+        <Button Content="Test Multiple 2" Click="HandleMultiple2"></Button>
+        
+    </StackPanel>
+    
+</Page>

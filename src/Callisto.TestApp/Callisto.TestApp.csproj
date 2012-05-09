@@ -128,6 +128,10 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Objects\Customer.cs" />
+    <Compile Include="Objects\Entity.cs" />
+    <Compile Include="Objects\PageExtender.cs" />
+    <Compile Include="Objects\TaskExtender.cs" />
     <Compile Include="ObjectTracker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SampleInput.xaml.cs">
@@ -141,6 +145,9 @@
     </Compile>
     <Compile Include="SamplePages\SettingsSample.xaml.cs">
       <DependentUpon>SettingsSample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SamplePages\SqliteSample.xaml.cs">
+      <DependentUpon>SqliteSample.xaml</DependentUpon>
     </Compile>
     <Compile Include="SamplePages\TiltSample.xaml.cs">
       <DependentUpon>TiltSample.xaml</DependentUpon>
@@ -201,6 +208,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SamplePages\SqliteSample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SamplePages\TiltSample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -223,6 +234,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="sqlite3">
+      <HintPath>..\..\..\..\SqliteFoo\Debug\SQLiteMetro\sqlite3.winmd</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' ">
     <VisualStudioVersion>11.0</VisualStudioVersion>

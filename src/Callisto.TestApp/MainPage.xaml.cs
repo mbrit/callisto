@@ -49,6 +49,10 @@ namespace Callisto.TestApp
 				Samples.Add(new SamplePage() { Name = "Settings", Page = typeof(SamplePages.SettingsSample) });
 				Samples.Add(new SamplePage() { Name = "Tilt Effect", Page = typeof(SamplePages.TiltSample) });
 				Samples.Add(new SamplePage() { Name = "LiveTile", Page = typeof(SamplePages.LiveTileSample) });
+
+                // @mbrit - 2012-05-09 - added a SQLite sample page...
+                Samples.Add(new SamplePage() { Name = "SQLite", Page = typeof(SamplePages.SqliteSample) });
+
 				this.DataContext = Samples;
 			}
 		}

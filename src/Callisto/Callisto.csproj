@@ -125,6 +125,10 @@
     <Compile Include="Converters\LengthToBooleanConverter.cs" />
     <Compile Include="Converters\RelativeTimeConverter.cs" />
     <Compile Include="Data\SQLite.cs" />
+    <Compile Include="Data\SQLiteAsync.cs" />
+    <Compile Include="Data\SQLiteConnectionPool.cs" />
+    <Compile Include="Data\SQLiteConnectionSettings.cs" />
+    <Compile Include="Data\SQLitePooledConnection.cs" />
     <Compile Include="Effects\TiltEffect.cs" />
     <Compile Include="Extensions\Extensions.cs" />
     <Compile Include="Extensions\WebViewExtension.cs" />
